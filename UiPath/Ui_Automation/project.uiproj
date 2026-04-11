@@ -1,0 +1,6 @@
+{
+  "Name": "Ui_Automation",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}

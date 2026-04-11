@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Eliminate $2",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "P1VymMaUOEqPWSiJ6TswOQ",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/P1VymMaUOEqPWSiJ6TswOQ",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "Created": "2026-04-11T06:45:28.6199522Z",
+  "Updated": "2026-04-11T06:45:28.6199522Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

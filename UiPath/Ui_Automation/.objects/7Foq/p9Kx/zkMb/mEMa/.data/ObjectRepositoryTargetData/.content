@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qqGk6of25EKVru1hLeWPjw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="uipath-registration-app.streamlit.app" CVScreenId="7a95fcc7-0ec1-4310-9770-5b5cc8100d3c" CvTextArea="735, 465, 938, 90" CvTextArgument="Conference Participants" CvType="Text" DesignTimeRectangle="739, 445, 930, 117" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' /&gt;&lt;webctrl id=':r0:' tag='SPAN' aaname='Conference Participants' /&gt;" Guid="a44d06fe-df6a-477c-b94f-b8d021fbf77e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Streamlit' /&gt;" SearchSteps="Selector, CV, SemanticSelector" SemanticSelectorArgument="The title for the list of conference participants." Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="f99e812bbeeae82324c1f71ca5c0c786.jpg" xmlns="">0NUamPNuaWUGDs6-TOTHGDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

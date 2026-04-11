@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Conference Contacts",
+  "Type": "App",
+  "Id": "V3e-UGCWOkOmMGcZKWIVtw",
+  "Reference": "lbc1qTgjg0mfOl9gWIjB7g/V3e-UGCWOkOmMGcZKWIVtw",
+  "Created": "2026-04-08T07:27:23.8400763Z",
+  "Updated": "2026-04-08T07:27:23.8400763Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,386 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>818.4,454.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="50">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Windows.Forms</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1217,4916" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="524,176" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="UiDemo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,4639.5" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" OutUiElement="[outputElement]" ScopeGuid="e0092d23-573e-4828-bbce-bff117439711" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,4392.5" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Cash In'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,4332.5" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,3644" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="str_AccountNumber" />
+                    <Variable x:TypeArguments="x:String" Name="str_Transaction" />
+                    <Variable x:TypeArguments="x:String" Name="str_TotalAmount" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Page is  in the required state.Proceeding to enter the amount and submit&quot;]" />
+                  <uix:NGetText DisplayName="Get Text 'Account Number'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" TextString="[str_AccountNumber]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="FParNBnf0E23wI9-djP2_A" DesignTimeRectangle="613, 248, 140, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='accountnrlabel' /&gt;&lt;ctrl name='*' role='text' /&gt;" Guid="a850bc4d-0768-4403-9b3d-970861aa84ce" InformativeScreenshot="eea3a28f562dae905a9690be8c337f1b.png" Reference="t-B9H8FSSkqR4tHDQItR0A/l9D54-spR0y1yIOJ3bUfmg" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, SemanticSelector" SemanticSelectorArgument="The account number displayed for the deposit transaction." Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="469, 248, 138, 28" CvTextArgument="Account #:" CvType="Text" DesignTimeRectangle="473, 248, 132, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Account #:' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Account #:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Account #:' /&gt;" Guid="54788283-897f-4347-b827-ad7a6d52832d" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NGetText DisplayName="Get Text 'Transaction'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" TextString="[str_Transaction]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="KnDvqrf1oEeba-2J1QorKQ" DesignTimeRectangle="1039, 248, 93, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='transnrlabel' /&gt;" Guid="e44e3f37-09a2-44bb-b9a1-477c26223933" InformativeScreenshot="a91b4f009bc5907b047faac6ca42a4bc.png" Reference="t-B9H8FSSkqR4tHDQItR0A/ajzBZongNEOPjtK867prVw" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, SemanticSelector" SemanticSelectorArgument="The displayed transaction number for the deposit transaction." Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="849, 248, 182, 28" CvTextArgument="Transaction #:" CvType="Text" DesignTimeRectangle="853, 248, 176, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Transaction #:' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Transaction #:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Transaction #:' /&gt;" Guid="038727a6-d5dd-4de1-83d2-f1cf099e7241" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <Assign sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[in_Config("Transaction")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[str_Transaction]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:AddLogFields DisplayName="Add Log Fields" sap:VirtualizedContainerService.HintSize="452,123.5" sap2010:WorkflowViewState.IdRef="AddLogFields_1">
+                    <ui:AddLogFields.Fields>
+                      <InArgument x:TypeArguments="x:String" x:Key="Current Account">[str_AccountNumber]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="Current Transaction">[str_Transaction]</InArgument>
+                    </ui:AddLogFields.Fields>
+                  </ui:AddLogFields>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Cash In'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,247" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" Text="[in_TransactionItem.SpecificContent(&quot;CashIn&quot;).ToString]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="pAPjgEnquUyc1I8w2lm2-w" DesignTimeRectangle="663, 334, 240, 46" DesignTimeScaleFactor="2" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='cashintb' /&gt;" Guid="b5f43150-fb4a-4bff-8060-2644c2628441" InformativeScreenshot="33d151b0eec44dc8af2a6e916a1cdf8d.png" Reference="t-B9H8FSSkqR4tHDQItR0A/l88Nr3-RK0G50m7QgLj7pA" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V6">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="521, 340, 102, 26" CvTextArgument="Cash In" CvType="Text" DesignTimeRectangle="525, 338, 97, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Cash In' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Cash In' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Cash In' /&gt;" Guid="a256c417-f5c6-4509-a2f8-a49b866cb146" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'On Us Check'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,247" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" Text="[in_TransactionItem.SpecificContent(&quot;OnUsCheck&quot;).ToString]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="CvW6Q-ZbTkeQL0PkbAzfeQ" DesignTimeRectangle="663, 412, 240, 46" DesignTimeScaleFactor="2" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='onustb' /&gt;" Guid="958cdc6c-5176-4dfb-8c80-2ed823a20d40" InformativeScreenshot="87074ac4284ee2e6d5178d56af5922b9.png" Reference="t-B9H8FSSkqR4tHDQItR0A/2Vu2ZBaMv06AS0TPNmicPw" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V6">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="451, 416, 172, 28" CvTextArgument="On Us Check" CvType="Text" DesignTimeRectangle="455, 416, 167, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='On Us Check' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='On Us Check' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='On Us Check' /&gt;" Guid="b1b9ff06-54c9-45a4-8120-594705b7f47c" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Not On Us Check'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,247" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" Text="[in_TransactionItem.SpecificContent(&quot;NotOnUsCheck&quot;).ToString+&quot;[k(tab)]&quot;]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="O1fEoxAU_UOYxLNWRx0okA" DesignTimeRectangle="663, 490, 240, 46" DesignTimeScaleFactor="2" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='notonustb' /&gt;" Guid="c12c3323-f59e-4590-aaca-a6d953f67dc5" InformativeScreenshot="015a7481ba237e66fe314de187fde1a2.png" Reference="t-B9H8FSSkqR4tHDQItR0A/8GVlqROs-kW1a2_HnQAcMA" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V6">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="401, 494, 222, 28" CvTextArgument="Not On Us Check" CvType="Text" DesignTimeRectangle="403, 494, 218, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Not On Us Check' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Not On Us Check' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Not On Us Check' /&gt;" Guid="4e50517e-a6c7-4b0f-affd-715a3aedc72d" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NGetText DisplayName="Get Text 'Total Deposit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" TextString="[str_TotalAmount]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="WeowEOih_UaEVQqDv0yLTg" DesignTimeRectangle="823, 692, 70, 32" DesignTimeScaleFactor="2" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='TotalLB' /&gt;&lt;ctrl name='$*' role='text' /&gt;" Guid="03f5ecfd-0f01-4424-9a59-4b5e753e3be0" InformativeScreenshot="51e85863f330e7cbebe98fbce46cbf8e.png" Reference="t-B9H8FSSkqR4tHDQItR0A/mZP7brji_U2_AkGrW9QMXw" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V6">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="443, 692, 164, 34" CvTextArgument="Total deposit" CvType="Text" DesignTimeRectangle="447, 692, 157, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Total deposit' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Total deposit' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Total deposit' /&gt;" Guid="a6391fd4-202c-4efe-b3c5-351fcd320d96" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Total Amount : &quot;+str_TotalAmount]" />
+                  <If Condition="[CDbl(str_TotalAmount.Replace(&quot;$&quot;, &quot;&quot;)) &gt;= CDbl(in_Config(&quot;MaxTransactionThreashold&quot;).ToString())]" sap:VirtualizedContainerService.HintSize="452,717" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,350.5" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Total Amount : &quot;+str_TotalAmount+&quot; is greather than the threashold amount. So marking it as Business Exception.&quot;]" />
+                        <Throw Exception="[new BusinessRuleException(&quot;Total amount is greater than the threashold amount.&quot;)]" sap:VirtualizedContainerService.HintSize="416,114.5" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,227" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Amount is with in the limits.So proceeding to accept the deposit for the transaction : &quot;+str_Transaction]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194.5" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="DXCxKcE0d0yuALP2IoLDIg" CvElementArea="876, 1086, 166, 66" CvTextArea="917, 1106, 80, 28" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="879, 1088, 160, 62" DesignTimeScaleFactor="2" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Accept' role='push button' /&gt;" Guid="6c05b1e5-e0fa-4aa0-aea2-c3aaa981d756" InformativeScreenshot="f2b9ba27c58651927d957d58c0f8e1fd.png" Reference="t-B9H8FSSkqR4tHDQItR0A/F0xYwMB-jEK1N3q7JgoiCQ" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, CV" Version="V6" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NGetText DisplayName="Get Text 'Transaction'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="e0092d23-573e-4828-bbce-bff117439711" TextString="[str_Transaction]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="KnDvqrf1oEeba-2J1QorKQ" DesignTimeRectangle="1039, 248, 93, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='transnrlabel' /&gt;" Guid="e44e3f37-09a2-44bb-b9a1-477c26223933" InformativeScreenshot="a91b4f009bc5907b047faac6ca42a4bc.png" Reference="t-B9H8FSSkqR4tHDQItR0A/ajzBZongNEOPjtK867prVw" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, SemanticSelector" SemanticSelectorArgument="The displayed transaction number for the deposit transaction." Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="849, 248, 182, 28" CvTextArgument="Transaction #:" CvType="Text" DesignTimeRectangle="853, 248, 176, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Transaction #:' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Transaction #:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Transaction #:' /&gt;" Guid="038727a6-d5dd-4de1-83d2-f1cf099e7241" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <If Condition="[in_Config(&quot;Transaction&quot;).ToString&lt;&gt;str_Transaction]" sap:VirtualizedContainerService.HintSize="452,708" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,227" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Cash Deposit Successfiull&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,350.5" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Cash Deposit Failed&quot;]" />
+                        <Throw Exception="[new SystemException(&quot;Cash Deposit Failed&quot;)]" sap:VirtualizedContainerService.HintSize="416,114.5" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,350.5" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Page is not in the required state.&quot;]" />
+                  <Throw Exception="[new SystemException(&quot;Page is not in the required state.&quot;)]" sap:VirtualizedContainerService.HintSize="416,114.5" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" ContentHash="pAPjgEnquUyc1I8w2lm2-w" DesignTimeRectangle="663, 334, 240, 46" DesignTimeScaleFactor="2" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='cashintb' /&gt;" Guid="b5f43150-fb4a-4bff-8060-2644c2628441" InformativeScreenshot="33d151b0eec44dc8af2a6e916a1cdf8d.png" Reference="t-B9H8FSSkqR4tHDQItR0A/l88Nr3-RK0G50m7QgLj7pA" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="521, 340, 102, 26" CvTextArgument="Cash In" CvType="Text" DesignTimeRectangle="525, 338, 97, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Cash In' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Cash In' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Cash In' /&gt;" Guid="a256c417-f5c6-4509-a2f8-a49b866cb146" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="147, 147, 520, 461" ContentHash="Dg_-C24R0ECQ4yROn_iNyA" FilePath="C:\Users\1nag2\Downloads\UiDemo\uidemo.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAASbSURBVHhe7ZrLblRHEIa9wnfsGecB8nrBcQjxZMZ2wsUO4BBCyEXyA/gFIkWRIiRgiJlgLobECbdgIGsWbLz0pqOq7upTXX1OWyo1UuLplj4dS2Or5qu/urw5IyPllFNOOeWUU87Qnl7v5PvL3U5/udcxw8RSr/MjuI/AD/LDo8RgMKh9It1Of0T+wbCBDTg4OBhKSgNKA0oDSgMaG7C5uWk2NjZqgc/k7wPr22/Nez/8U/H9a8/cd68qvgVeWq7umbmrL037mz3LlRemfYWeL0z76789rcvPzcWtN1Fd7fdNNkBDLM3EUfoVylr2zJyXZsJMunXZSnu+eobIulryN4ALR9I2aZBG8UCYS3PhSrp16ZmZvfTUzH75NKqrJXsDgvH2SdvxjqX5aDtxIWyx0p71J1FdLfkbQNIkzMTnhHQbpFGYpJ8H0i0njM/1J5aLwOOorpZkAzRLpVpkfIlZcX6fQb4dCDtIOJK24jMX/kJkXe33TTZAg5QO7nTdeLPRDpJG8cdOuhKfOW+RdbXkb4Dc3CQtk4aFhsJx0l6WCSNf/OnYjepqyd4A/q+Ki8slBrRYyrOUMoh6cRK20sfXds3M2q45vvpHVFdL/gYIaX+nG0abi8/KpEEYxFcrceTc71FdLckGaJZKXdIpaUyZJQ0pe0gYpa04Ietqv2+yARpC6XBzh3faCUvpNS5tZaeBs8Ajy5mHUV0t+RtAd5qLi6RD4ThpEEZxEkZpx+mHiKyrJXsDmjd3arxJGNIWwmesMDB1esfy+U5UV0v+BjRJrzZIw5PGm4SZ9DSTnvrsgUfW1ZJsgGap0PZOJn2INMoSTHpq5T4yuXI/qqv9vskGaJD3mW/uptFulF6ppFF8+Z5H1tXybhrgNzfcZ0i7XrxutIOkl4l7ZnLJ0buLyLpasjcg2tpsc4dJc+EGaRS/a+ltm4nutn/KulryN4Dus096xy4yLg3CLOkpLkzSLmkCpD2f3onqakk2QLNUGu8zSxuWWCCN410lTSlb7qCwp/MbIutqSTZAw7RLGp9yvEmc7jO70yQ+6RKWwsT44gCRdbVkb0Aw2jJpMd4TQdJMPBC20hMg/glwG5F1tWRvAKSMBOMdJh0Jc/HFMGkrPTDjp24ztqK6WvI3gEv7O82WmBQWSVcpu6eTHju1ZcY/3jJjwMlfo7pakg3QLEEa7ShpepKwSztI2Y03pYyyTBr56BYi62pJNkBDMmkUrpHmKXtxJ+zFnfzCLTO60I/qasnfACHthcUS4/eZUsYRD6Rt2iCMfEjcjOpqyd4AEMZF5gDpiWiR8dGOx3t0oUrait+0zFfIulreQQPqkhb3mYuTNE/ap10JH5u/YUZP3DDHkOtRXS3JBmiWoLzT0RI7TJqlPDpvhVH8g+sBsq6WZAM04F0m8WCBWXGSHatJGZNmKSNC/L/fgJrNHaXMR9sLO2pk65B1tWRvwOrPr/0ia5JGYLTdiEu5wzj3015UV0v2BvzfKA0oDXAN2N/fjz4cBmwDup3+tWu/RB8eZSBwcIYXxfF1+aXe4pF+Y7yWbqePr8uXU0455ZRTTjlDe/4Fr4EjoP42+M0AAAAASUVORK5CYII=" InformativeScreenshot="73c8cad3aad3f824f1a98cc707863ca3.png" Reference="t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA" Selector="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

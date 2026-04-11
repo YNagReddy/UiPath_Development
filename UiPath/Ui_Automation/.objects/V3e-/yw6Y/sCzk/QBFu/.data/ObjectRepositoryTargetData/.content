@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="A0l2vMd-Uk-arBOmPFVmRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="forms.office.com/pages/responsepage.aspx" CVScreenId="816c2e67-b9dc-48a4-96d3-81c1276718b2" CvElementArea="656, 1304, 182, 86" CvTextArea="697, 1333, 100, 30" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="660, 1308, 175, 80" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='css-181' matching:class='fuzzy' fuzzylevel:class='0.58' tag='BUTTON' data-automation-id='submitButton' /&gt;" Guid="8f69fe17-5d19-416f-bb30-e5c33450d19a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Conference Contacts' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="660, 1428, 1604, 34" FuzzySelectorArgument="&lt;webctrl class='-a-188' matching:class='fuzzy' fuzzylevel:class='0.0' parentid='form-main-content1' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='DIV' type='' aaname='Never give out your password.' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Never give out your password.Report abuse' /&gt;" Guid="e73e61d2-20e2-4f58-a1e0-f7a181d6f561" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d51692283cc361f409a0753a7c85d952.jpg" xmlns="">0Nyj-xasock-bgIEzZoT6Pw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FParNBnf0E23wI9-djP2_A" Reference="t-B9H8FSSkqR4tHDQItR0A/l9D54-spR0y1yIOJ3bUfmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" DesignTimeRectangle="613, 248, 140, 32" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='accountnrlabel' /&gt;&lt;ctrl name='*' role='text' /&gt;" Guid="a850bc4d-0768-4403-9b3d-970861aa84ce" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, SemanticSelector" SemanticSelectorArgument="The account number displayed for the deposit transaction." Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="469, 248, 138, 28" CvTextArgument="Account #:" CvType="Text" DesignTimeRectangle="473, 248, 132, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Account #:' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Account #:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Account #:' /&gt;" Guid="54788283-897f-4347-b827-ad7a6d52832d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="eea3a28f562dae905a9690be8c337f1b.png" xmlns="">05rXuddyE40qUHkG5a1C7JA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

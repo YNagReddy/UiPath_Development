@@ -1,0 +1,12 @@
+﻿{
+  "Name": "UiDemo",
+  "Type": "Screen",
+  "Id": "EubC5dpiHUSzlWLQ9Zj4oA",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/UoDAoeXtYkGxrMDho4bang",
+  "Created": "2026-04-10T12:47:36.5077582Z",
+  "Updated": "2026-04-10T12:47:36.5077582Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

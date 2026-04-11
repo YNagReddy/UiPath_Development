@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Streamlit",
+  "Type": "Screen",
+  "Id": "zkMb-IQbBUGDFmvuXQfCfA",
+  "Reference": "lbc1qTgjg0mfOl9gWIjB7g/zkMb-IQbBUGDFmvuXQfCfA",
+  "ParentRef": "lbc1qTgjg0mfOl9gWIjB7g/p9KxpLIcf0mF8LbqwqCc6A",
+  "Created": "2026-04-08T06:22:47.2024916Z",
+  "Updated": "2026-04-08T06:22:47.2024916Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="p-adtzLTCkWqsYyb9bq95g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="dc1dce33-484d-4135-9746-0d279895a75d" CvElementArea="736, 1032, 1411, 86" CvType="InputBox" DesignTimeRectangle="741, 1039, 1404, 76" DesignTimeScaleFactor="2" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id=':r2:' tag='INPUT' type='text' class='st-ae st-bd st-be st-bf st-bg st-bh st-bi st-bj st-bk st-bl st-bm st-ah st-bn st-bo st-bp st-bq st-br st-bs st-bt st-bu st-ax st-ay st-bv st-bw st-b1 st-b2 st-bc st-bx st-by' aaname='User name' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="959fa854-ced3-46a3-8a99-3f38ccef400f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Streamlit' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="739, 981, 1408, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl tag='LABEL' type='' class='st-emotion-cache-1weic72 e1kt9bl70' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='User name' /&gt;" Guid="52caeaa4-2de9-4fe7-b2a6-2325ac044e70" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="5d8479e68ad1e48eb8c203a2252e68b3.jpg" xmlns="">0ID2VCDNpE06u2wbj6dEIEw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

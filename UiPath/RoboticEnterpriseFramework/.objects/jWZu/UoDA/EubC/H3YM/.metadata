@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Use Piece Count",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "H3YMC6gxA0uGXJRbq7aLgA",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/H3YMC6gxA0uGXJRbq7aLgA",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "Created": "2026-04-11T06:45:28.3110189Z",
+  "Updated": "2026-04-11T06:45:28.3110189Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

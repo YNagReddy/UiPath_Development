@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Split Deposit",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "R5ZNPf0QLEKNWEqIIcIJ-Q",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/R5ZNPf0QLEKNWEqIIcIJ-Q",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "Created": "2026-04-11T06:45:28.0975613Z",
+  "Updated": "2026-04-11T06:45:28.0975613Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

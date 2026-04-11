@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kUucJcvhCUankmpu9iwS7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvElementArea="63, 1136, 246, 73" CvTextArea="159, 1158, 54, 30" CvTextArgument="Exit" CvType="Button" DesignTimeRectangle="66, 1139, 240, 68" DesignTimeScaleFactor="2" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Exit' role='push button' /&gt;" Guid="4694e258-48dd-479e-9dc6-16bff6760ed1" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="953942143a92a5a004e615e9c90aa03e.png" xmlns="">0dqwtR2YTMEqJBVutDhr1gA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Use Cash Count",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "FXhS-VcGXk6OGE0zuNCN1g",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/FXhS-VcGXk6OGE0zuNCN1g",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "Created": "2026-04-11T06:45:28.2551108Z",
+  "Updated": "2026-04-11T06:45:28.2551108Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

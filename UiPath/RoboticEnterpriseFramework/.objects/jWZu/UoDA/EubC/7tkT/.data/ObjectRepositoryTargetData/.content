@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YdhgergXvkaERthD2ZYz3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvElementArea="61, 246, 34, 34" CvTextArea="97, 250, 126, 26" CvTextArgument="Withdrawal" CvType="RadioButton" DesignTimeRectangle="64, 249, 158, 30" DesignTimeScaleFactor="2" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='Withdrawalradiobutton' /&gt;" Guid="b476b7a4-b2bc-4d60-8c28-7afcd697b627" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="97, 250, 126, 26" CvTextArgument="Withdrawal" CvType="Text" DesignTimeRectangle="102, 247, 120, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl automationid='Withdrawalradiobutton' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;&lt;ctrl name='Withdrawal' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Withdrawal' /&gt;" Guid="c3aa9bc3-a374-43e2-8d56-1249b44a231b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopLeft" X="14" Y="14" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="0e700ab44adca6896dbb59dc5958fce9.png" xmlns="">0hYesoQB1a0OdwTiIpi0HIw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

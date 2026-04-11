@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Deposit",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "3xs680zqhE2UzXC_sojiHA",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/3xs680zqhE2UzXC_sojiHA",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/pqSe1WnM5U-rUqYx1QjJVQ",
+  "Created": "2026-04-11T06:45:28.9263452Z",
+  "Updated": "2026-04-11T06:45:28.9263452Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

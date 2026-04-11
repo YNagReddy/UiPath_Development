@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Total Deposit",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "mZP7brji_U2_AkGrW9QMXw",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/mZP7brji_U2_AkGrW9QMXw",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "Created": "2026-04-11T06:45:28.6729955Z",
+  "Updated": "2026-04-11T06:45:28.6729955Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NIFeIWOOW0a4L-3EJrWHaw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="739, 1317, 149, 80" DesignTimeScaleFactor="2" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl aaname='Submit' parentid='root' tag='BUTTON' type='' class='st-emotion-cache-1anq8dj e7msn5c2' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='Submit' /&gt;" Guid="72791172-63ee-476b-8989-c759ba6e5ef5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Streamlit' /&gt;" SearchSteps="FuzzySelector" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="765, 1331, 97, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl aaname='Submit' tag='P' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='Submit' /&gt;" Guid="f2d75c13-54f8-4734-ba81-2c23cbe62b7b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3edffa92ba2ad644dd8bf093d0015dfb.jpg" xmlns="">0lNe5islttES8Yf1UWc5utw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

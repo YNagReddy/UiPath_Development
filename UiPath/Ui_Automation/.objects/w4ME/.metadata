@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Streamlit",
+  "Type": "App",
+  "Id": "w4MEHOsESECNOj0dOXHCsA",
+  "Reference": "lbc1qTgjg0mfOl9gWIjB7g/w4MEHOsESECNOj0dOXHCsA",
+  "Created": "2026-04-08T06:17:25.7744371Z",
+  "Updated": "2026-04-08T06:17:25.7744371Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

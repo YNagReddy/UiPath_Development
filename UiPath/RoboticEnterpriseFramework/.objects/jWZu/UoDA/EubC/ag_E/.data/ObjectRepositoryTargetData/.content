@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qez9bWJIb0KfCQWoI1NG9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvElementArea="512, 1086, 165, 66" CvTextArea="555, 1106, 78, 24" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="515, 1088, 160, 62" DesignTimeScaleFactor="2" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Cancel' role='push button' /&gt;" Guid="5b983fd0-98c9-4add-8316-c1a046fa8b89" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="d310497a3101caec800cfc30f0eb83c7.png" xmlns="">03x_z4NXndEuQR0mVkXKa1g</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

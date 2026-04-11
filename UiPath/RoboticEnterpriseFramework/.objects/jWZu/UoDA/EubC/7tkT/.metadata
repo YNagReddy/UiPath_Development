@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Withdrawal",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "7tkT7eNHC0So0F0FGV-4Dw",
+  "Reference": "t-B9H8FSSkqR4tHDQItR0A/7tkT7eNHC0So0F0FGV-4Dw",
+  "ParentRef": "t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA",
+  "Created": "2026-04-11T06:45:27.8523142Z",
+  "Updated": "2026-04-11T06:45:27.8523142Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

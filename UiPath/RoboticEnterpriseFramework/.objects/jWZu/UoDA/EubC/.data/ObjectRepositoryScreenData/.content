@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="Dg_-C24R0ECQ4yROn_iNyA" Reference="t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="147, 147, 520, 461" ContentHash="SbzvNFyZhkyq5CnnrAdxEA" FilePath="C:\Users\1nag2\Downloads\UiDemo\uidemo.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAASbSURBVHhe7ZrLblRHEIa9wnfsGecB8nrBcQjxZMZ2wsUO4BBCyEXyA/gFIkWRIiRgiJlgLobECbdgIGsWbLz0pqOq7upTXX1OWyo1UuLplj4dS2Or5qu/urw5IyPllFNOOeWUU87Qnl7v5PvL3U5/udcxw8RSr/MjuI/AD/LDo8RgMKh9It1Of0T+wbCBDTg4OBhKSgNKA0oDSgMaG7C5uWk2NjZqgc/k7wPr22/Nez/8U/H9a8/cd68qvgVeWq7umbmrL037mz3LlRemfYWeL0z76789rcvPzcWtN1Fd7fdNNkBDLM3EUfoVylr2zJyXZsJMunXZSnu+eobIulryN4ALR9I2aZBG8UCYS3PhSrp16ZmZvfTUzH75NKqrJXsDgvH2SdvxjqX5aDtxIWyx0p71J1FdLfkbQNIkzMTnhHQbpFGYpJ8H0i0njM/1J5aLwOOorpZkAzRLpVpkfIlZcX6fQb4dCDtIOJK24jMX/kJkXe33TTZAg5QO7nTdeLPRDpJG8cdOuhKfOW+RdbXkb4Dc3CQtk4aFhsJx0l6WCSNf/OnYjepqyd4A/q+Ki8slBrRYyrOUMoh6cRK20sfXds3M2q45vvpHVFdL/gYIaX+nG0abi8/KpEEYxFcrceTc71FdLckGaJZKXdIpaUyZJQ0pe0gYpa04Ietqv2+yARpC6XBzh3faCUvpNS5tZaeBs8Ajy5mHUV0t+RtAd5qLi6RD4ThpEEZxEkZpx+mHiKyrJXsDmjd3arxJGNIWwmesMDB1esfy+U5UV0v+BjRJrzZIw5PGm4SZ9DSTnvrsgUfW1ZJsgGap0PZOJn2INMoSTHpq5T4yuXI/qqv9vskGaJD3mW/uptFulF6ppFF8+Z5H1tXybhrgNzfcZ0i7XrxutIOkl4l7ZnLJ0buLyLpasjcg2tpsc4dJc+EGaRS/a+ltm4nutn/KulryN4Dus096xy4yLg3CLOkpLkzSLmkCpD2f3onqakk2QLNUGu8zSxuWWCCN410lTSlb7qCwp/MbIutqSTZAw7RLGp9yvEmc7jO70yQ+6RKWwsT44gCRdbVkb0Aw2jJpMd4TQdJMPBC20hMg/glwG5F1tWRvAKSMBOMdJh0Jc/HFMGkrPTDjp24ztqK6WvI3gEv7O82WmBQWSVcpu6eTHju1ZcY/3jJjwMlfo7pakg3QLEEa7ShpepKwSztI2Y03pYyyTBr56BYi62pJNkBDMmkUrpHmKXtxJ+zFnfzCLTO60I/qasnfACHthcUS4/eZUsYRD6Rt2iCMfEjcjOpqyd4AEMZF5gDpiWiR8dGOx3t0oUrait+0zFfIulreQQPqkhb3mYuTNE/ap10JH5u/YUZP3DDHkOtRXS3JBmiWoLzT0RI7TJqlPDpvhVH8g+sBsq6WZAM04F0m8WCBWXGSHatJGZNmKSNC/L/fgJrNHaXMR9sLO2pk65B1tWRvwOrPr/0ia5JGYLTdiEu5wzj3015UV0v2BvzfKA0oDXAN2N/fjz4cBmwDup3+tWu/RB8eZSBwcIYXxfF1+aXe4pF+Y7yWbqePr8uXU0455ZRTTjlDe/4Fr4EjoP42+M0AAAAASUVORK5CYII=" Reference="t-B9H8FSSkqR4tHDQItR0A/EubC5dpiHUSzlWLQ9Zj4oA" Selector="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="73c8cad3aad3f824f1a98cc707863ca3.png" xmlns="">05-v_KgnJ806VO7p8YESEPA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

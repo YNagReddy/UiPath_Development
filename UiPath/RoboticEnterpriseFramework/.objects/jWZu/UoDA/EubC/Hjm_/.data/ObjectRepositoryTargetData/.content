@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nS-D_6f_wkmXTZFjZ3K1Lg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvElementArea="962, 331, 165, 51" CvTextArea="981, 344, 126, 26" CvTextArgument="Cash Count" CvType="Button" DesignTimeRectangle="965, 334, 160, 46" DesignTimeScaleFactor="2" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='CashC' /&gt;" Guid="24c2a64f-61e1-45c7-843c-7443008622f1" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="937223a0a24c1c5aed1f438b251e07fd.png" xmlns="">0US1XPJO7DkOHOeJMWYzLfA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

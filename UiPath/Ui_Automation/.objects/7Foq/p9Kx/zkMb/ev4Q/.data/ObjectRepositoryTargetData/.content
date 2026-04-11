@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="garCPdbXK0eFa9CqdOI0zQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="741, 1207, 1304, 76" DesignTimeScaleFactor="2" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id=':r3:' tag='INPUT' type='password' class='st-ae st-bd st-be st-bf st-bg st-bh st-bi st-bj st-bk st-bl st-bm st-ah st-bn st-bo st-bp st-bq st-br st-bs st-bt st-bu st-ax st-ay st-bv st-bw st-b1 st-b2 st-bc st-bx st-by' aaname='Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c59132b4-e1a2-492a-b720-a7da5d19d985" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Streamlit' /&gt;" SearchSteps="FuzzySelector" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="739, 1149, 1408, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl src='//uipath-registration-app.streamlit.app/~/+/' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl type='' tag='LABEL' class='st-emotion-cache-1weic72 e1kt9bl70' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Password' /&gt;" Guid="61ca56bc-32ef-4a52-b542-b23240a6b0e2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9c8bc39fa9bc1e419166b97312c240c1.jpg" xmlns="">0iZ-7I0XZXEatsBJ8t5c01w</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Conference Participants",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "mEMaQm7eNU2JG5BUxEGoAg",
+  "Reference": "lbc1qTgjg0mfOl9gWIjB7g/mEMaQm7eNU2JG5BUxEGoAg",
+  "ParentRef": "lbc1qTgjg0mfOl9gWIjB7g/zkMb-IQbBUGDFmvuXQfCfA",
+  "Created": "2026-04-08T06:34:58.5154452Z",
+  "Updated": "2026-04-08T06:34:58.5154452Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Yx9tk6btokeCgzJMN328rQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e8603948-e2d6-4336-aa50-aa9b1ff691e2" CvElementArea="193, 378, 154, 44" CvTextArea="235, 388, 70, 30" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="195, 380, 150, 40" DesignTimeScaleFactor="2" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;" Guid="cb4ffffd-2615-48b5-8d13-125ceb391eb6" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <imageRef attrName="InformativeScreenshot" originalValue="ebd290cd99e66fc5c623305bf19758af.png" xmlns="">0WFMcQst6_0uQOgtkMefbIw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9VXv-UvAXEmH2KRfuHYY9w" Reference="t-B9H8FSSkqR4tHDQItR0A/pgd9SLXMlkmZG8Ph58XmGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e8603948-e2d6-4336-aa50-aa9b1ff691e2" DesignTimeRectangle="219, 178, 240, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='user' /&gt;" Guid="512a1ba6-2a7a-4e7b-ad67-b793eca4c37b" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' title='UiDemo' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e8603948-e2d6-4336-aa50-aa9b1ff691e2" CvTextArea="53, 186, 110, 24" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="55, 182, 107, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='Username' role='text' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Username' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Username' /&gt;" Guid="ac0a627d-aa74-4376-9233-d116183edf72" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3dce3d2644097ec476410c847c66c64b.png" xmlns="">0iJ-x5zwIFkq5pHgDNzUv7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

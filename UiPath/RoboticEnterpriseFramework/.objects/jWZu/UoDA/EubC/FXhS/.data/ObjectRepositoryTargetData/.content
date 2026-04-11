@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7HWpBUNCnEaYbCDBpRdfmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvElementArea="63, 387, 33, 31" CvTextArea="101, 392, 172, 24" CvTextArgument="Use Cash Count" CvType="CheckBox" DesignTimeRectangle="64, 389, 207, 30" DesignTimeScaleFactor="2" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='usecashcount' /&gt;" Guid="be9e5dcc-f8ba-4222-9f5e-0386ddcb1e3e" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c8f25c25-c61d-4337-a12f-65aaa6b5478b" CvTextArea="101, 392, 172, 24" CvTextArgument="Use Cash Count" CvType="Text" DesignTimeRectangle="104, 387, 167, 32" ElementType="Text" FuzzySelectorArgument="&lt;ctrl automationid='usecashcount' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;&lt;ctrl name='Use Cash Count' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Use Cash Count' /&gt;" Guid="9b658c13-54e5-43d9-93fa-2c58c35f9689" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Position="TopLeft" X="15" Y="13" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b0de4abbc9d7f8ca8f4b78e05fbe79b1.png" xmlns="">0zqqFlKvmMkK-IqlLQ_ru9g</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
