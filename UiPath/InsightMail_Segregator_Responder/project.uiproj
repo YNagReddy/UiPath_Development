@@ -1,0 +1,6 @@
+{
+  "Name": "InsightMail_Segregator_Responder",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework executing mail segregation and Responder",
+  "MainFile": "Main.xaml"
+}

@@ -1,9 +1,40 @@
 
 ################################################################################
-# Added by UiPath Studio
-# Prevent caching and local artifacts from being committed
+# UiPath Studio — Comprehensive .gitignore
 ################################################################################
-.local
+
+# ── UiPath Internal / Cache Directories ──
+.local/
+.objects/
+.settings/
+.project/
+.templates/
+.tmh/
+.entities/
+.screenshots/
+.storage/
+
+# ── Excel Temp Lock Files ──
+~$*.xlsx
+~$*.xls
+
+# ── OS / Editor ──
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ── Visual Studio ──
+.vs/
+bin/
+obj/
+
+# ── NuGet ──
+packages/
+
 ################################################################################
-# End of UiPath Studio common ignores
+# End of UiPath .gitignore
 ################################################################################
