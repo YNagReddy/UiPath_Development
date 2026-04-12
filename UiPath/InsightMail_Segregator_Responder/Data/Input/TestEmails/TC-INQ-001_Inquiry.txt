@@ -1,0 +1,31 @@
+== INQUIRY TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Inquiry | Expected Sentiment: Neutral | Expected Priority: Medium
+Expected Action: Auto-reply (if confidence >= 80%)
+
+--- Gemini Batch Emails Sent (5 Inquiries) ---
+
+INQ-1: Strategic partnership evaluation
+  Subject: Q3 Strategic Partnership Evaluation
+  Entities: Q3, enterprise SLAs, pricing models
+  Tone: Neutral, business-evaluation, information-gathering
+
+INQ-2: API rate limits
+  Subject: Rate limits for data/v2/pull endpoint
+  Entities: data/v2/pull API, Pro tier, daily rate, concurrency limits
+  Tone: Technical, developer support query
+
+INQ-3: Enterprise license clarification
+  Subject: Inquiry regarding Enterprise multi-region failover
+  Entities: Enterprise license tier, multi-region failover, active-active
+  Tone: Sales inquiry, neutral, comparing features
+
+INQ-4: Internal project status check
+  Subject: Internal: Project X Milestone 4 Status
+  Entities: Project X, Milestone 4, Friday deadline
+  Tone: Casual internal, checking for blockers
+
+INQ-5: Hotel shuttle schedule
+  Subject: Airport shuttle schedule (Reservation #5502)
+  Entities: Reservation #5502, airport shuttle, complimentary
+  Tone: Polite guest inquiry, travel logistics

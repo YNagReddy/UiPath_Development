@@ -1,0 +1,26 @@
+== EDGE CASE: EMPTY BODY ==
+Expected Behavior: Bot should handle gracefully (BusinessRuleException or default category)
+No GenAI activity should crash on empty/null input.
+
+Subject: (No subject)
+Body: [EMPTY]
+
+--- EDGE CASE: VERY LONG BODY ---
+Expected Behavior: Bot should truncate to MaxBodyLength (4000 chars) before passing to AI.
+Test that summarization and categorization still work on truncated content.
+
+--- EDGE CASE: ATTACHMENT-ONLY ---
+Expected Behavior: Bot processes subject line only when body is minimal.
+Attachments are NOT processed by GenAI (out of scope).
+
+--- Workspace Edge Cases ---
+
+ATTACHMENT FILES IN INBOX:
+  1. 22365_3_Prompt Engineering_v7 (1).pdf
+     Content: Email classification exercise (IMPORTANT/NOT IMPORTANT)
+     Contains: Fictional bug report from "Harry the Hacker" about JS alert vulnerability
+     Edge case: Bot should NOT open/read PDF — process email metadata only
+
+  2. Cohere_Langchain.ipynb
+     Content: Cohere + LangChain notebook
+     Edge case: Binary attachment — bot must not crash on non-text attachments

@@ -1,0 +1,35 @@
+== EDGE CASE: PII-LADEN EMAIL ==
+Expected Behavior: PII Filter activity MUST redact all sensitive data before logging to Excel.
+This is the most critical security test case.
+
+Subject: Update payment method
+Body contains:
+  - Credit card: Visa 4532 8839 1234 5678
+  - Expiration: 12/26
+  - CVV: 492
+  - SSN: 884-22-1923
+  - Phone: 555-8821
+  - Account number: 44837
+
+Expected PII Filter Output:
+  - Credit card → [REDACTED]
+  - CVV → [REDACTED]
+  - SSN → [REDACTED]
+  - Phone → [REDACTED]
+
+--- Additional PII Edge Cases from Workspace Context ---
+
+API KEY EXPOSURE:
+  ExchangeRate-API welcome email contains: API key fc73c23f6d20be4b110b2bc7
+  Expected: PII filter should flag or redact API keys in logs
+
+VERIFICATION CODES:
+  AWS Builder ID email contains: verification code 355168
+  Expected: OTP/verification codes should be treated as sensitive
+
+REAL NAMES & IDENTIFIERS:
+  - Username: arjun_20260 (Discord)
+  - Frequent Flyer: FF-88291 (Complaint email)
+  - Employee IDs: EMP-9923 (Request email)
+  - Account references: 8847-XYZ, *4821, SVC-4113
+  Expected: NER should extract these; PII filter should redact personal identifiers

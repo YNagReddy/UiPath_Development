@@ -1,0 +1,31 @@
+== REQUEST TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Request | Expected Sentiment: Neutral/Positive | Expected Priority: Medium
+Expected Action: Auto-reply (if confidence >= 80%)
+
+--- Gemini Batch Emails Sent (5 Requests) ---
+
+REQ-1: Vacation leave request
+  Subject: Vacation leave request (June 15-20, 2026)
+  Entities: June 15-20 2026, Sarah (coverage)
+  Tone: Professional, polite, formal PTO request
+
+REQ-2: System access for Project Phoenix
+  Subject: Access request for Project Phoenix (PRJ-P001)
+  Entities: PRJ-P001, contributor access, code repository
+  Tone: Professional, manager-approved, standard IT request
+
+REQ-3: Change of delivery address
+  Subject: Change of delivery address - SHIP-3005
+  Entities: Shipment #SHIP-3005, 400 Broad St Seattle WA 98109
+  Tone: Polite, straightforward logistics update
+
+REQ-4: Blog collaboration
+  Subject: Collaboration on Q3 Blog Post
+  Entities: Q3, API changes, marketing team
+  Tone: Friendly, collaborative, scheduling a sync
+
+REQ-5: Payment extension
+  Subject: Payment extension request - Invoice P-449
+  Entities: Invoice P-449, 15-day extension
+  Tone: Professional, courteous, citing internal processing delays

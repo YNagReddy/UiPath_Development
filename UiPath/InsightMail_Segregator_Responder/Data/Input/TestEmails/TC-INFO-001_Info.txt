@@ -1,0 +1,31 @@
+== INFO / GENERAL TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Info | Expected Sentiment: Neutral | Expected Priority: Low
+Expected Action: Log only (no reply needed)
+
+--- Gemini Batch Emails Sent (5 General/Miscellaneous) ---
+
+GEN-1: New compliance policy announcement
+  Subject: New compliance policy POL-DCS-2026
+  Entities: POL-DCS-2026, effective May 1st, intranet
+  Tone: Neutral, informational broadcast, no action required
+
+GEN-2: Meeting scheduling
+  Subject: Schedule: 90-minute Q4 Planning Session
+  Entities: Q4, 90-minute session, next week
+  Tone: Neutral, organizational, scheduling request
+
+GEN-3: Positive campaign feedback
+  Subject: Great work on Project Nova
+  Entities: Project Nova, marketing team, engagement metrics
+  Tone: Positive, praise, encouraging
+
+GEN-4: Vendor list request
+  Subject: Requesting 2026 Vendor List
+  Entities: 2026 Vendor List, finalized version
+  Tone: Neutral, low-priority, casual internal request
+
+GEN-5: Thank-you note to IT
+  Subject: Thank you IT Team!
+  Entities: IT team, system migration, last weekend
+  Tone: Very positive, gratitude, team appreciation

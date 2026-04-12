@@ -1,0 +1,31 @@
+== ESCALATION TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Escalation | Expected Sentiment: Negative | Expected Priority: High
+Expected Action: Escalate to Action Center (human review)
+
+--- Gemini Batch Emails Sent (5 Escalations) ---
+
+ESC-1: Unresolved customer service ticket
+  Subject: ESCALATION: Unresolved ticket CS-901
+  Entities: CS-901, 14 days open, management escalation
+  Tone: Firm, aggressive, demanding immediate fix
+
+ESC-2: Critical project delay - Beta Launch
+  Subject: CRITICAL: Beta Launch Delay Risk
+  Entities: Beta launch, backend auth module, Director level
+  Tone: Urgent, internal escalation, risk of missed deadline
+
+ESC-3: Repeated incorrect billing
+  Subject: ESCALATION: Repeated incorrect billing BLL-678
+  Entities: BLL-678, 3 months running, account manager
+  Tone: Frustrated, threatening cancellation
+
+ESC-4: Substandard vendor deliverables
+  Subject: ESCALATING: Substandard deliverables VDR-104
+  Entities: PO VDR-104, QA checks failed, VP meeting demanded
+  Tone: Formal escalation, breach of contract language
+
+ESC-5: Urgent legal compliance breach
+  Subject: URGENT LEGAL: Compliance breach DOC-199
+  Entities: DOC-199, data handling, cease operations
+  Tone: Legal authority, highest severity, cease-and-desist

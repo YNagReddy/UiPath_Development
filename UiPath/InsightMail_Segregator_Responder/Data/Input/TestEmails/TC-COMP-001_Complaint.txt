@@ -1,0 +1,31 @@
+== COMPLAINT TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Complaint | Expected Sentiment: Negative | Expected Priority: High
+Expected Action: Escalate to Action Center (human review)
+
+--- Gemini Batch Emails Sent (5 Complaints) ---
+
+COMP-1: Defective tech/e-commerce goods
+  Subject: Defective laptop received - Order #ORD-8821
+  Entities: Order #ORD-8821, $1,299.99, April 8 2026
+  Tone: Furious, demanding replacement/refund within 48 hours
+
+COMP-2: Unauthorized financial transaction
+  Subject: Unauthorized transaction on my account - BNK-743
+  Entities: BNK-743, $450.00, Account *4821, April 10 2026
+  Tone: Alarmed, demanding card freeze and chargeback
+
+COMP-3: Travel service failure - missed connection & lost luggage
+  Subject: Missed connection and lost luggage - Ticket TKT-992
+  Entities: TKT-992, Flight AA-472, FF-88291, $50,000, April 9 2026
+  Tone: Angry, stranded, demanding rebooking + compensation
+
+COMP-4: Long-term utility outage
+  Subject: 3-DAY POWER OUTAGE - Account SVC-4113
+  Entities: SVC-4113, $300 groceries, $150/night hotel, April 9 2026
+  Tone: Desperate, threatening utilities commission escalation
+
+COMP-5: Damaged retail furniture delivery
+  Subject: Damaged furniture delivery - Invoice INV-123
+  Entities: INV-123, $899.00, $75 delivery fee, April 5-11 2026
+  Tone: Very disappointed, demanding replacement + delivery refund

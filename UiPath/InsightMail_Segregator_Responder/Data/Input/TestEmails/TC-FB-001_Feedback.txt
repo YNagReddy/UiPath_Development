@@ -1,0 +1,31 @@
+== FEEDBACK / FOLLOW-UP TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Feedback | Expected Sentiment: Neutral/Positive | Expected Priority: Low-Medium
+Expected Action: Log only (follow-ups may map to Request)
+
+--- Gemini Batch Emails Sent (5 Follow-ups) ---
+
+FOL-1: Job application follow-up
+  Subject: Checking on application - RPA Engineer
+  Entities: RPA Engineer role, last week submission
+  Tone: Polite, hopeful, professional persistence
+
+FOL-2: Platform access follow-up
+  Subject: Follow up: Aisera GenAI Access (Ref: 84905)
+  Entities: Ref 84905, Aisera platform, Bhuvana RP
+  Tone: Polite, checking on timeline, Generative AI training
+
+FOL-3: Budget proposal follow-up
+  Subject: Follow-up: Q3 Budget Proposal
+  Entities: Q3 Budget Proposal, Tuesday submission, Friday deadline
+  Tone: Neutral, time-sensitive, needs approval
+
+FOL-4: Design files delivery confirmation
+  Subject: Checking on final design files
+  Entities: Final design files, FTP server, yesterday
+  Tone: Casual, quick check, delivery confirmation
+
+FOL-5: Meeting attendance confirmation
+  Subject: Confirmation needed: Client Kick-off
+  Entities: Client kick-off, tomorrow, catering numbers
+  Tone: Friendly, logistical, needs RSVP

@@ -1,0 +1,79 @@
+== URGENT TEST DATA ==
+Target: ArjunRPAEnvironment@outlook.com
+Expected Category: Urgent | Expected Sentiment: Negative/Neutral | Expected Priority: High
+Expected Action: Escalate to Action Center (immediate human review)
+
+--- Gemini Batch: No dedicated Urgent batch ---
+Note: Urgent scenarios overlap with Escalation and Complaint batches.
+The following workspace context emails also serve as real-world urgent/alert test data:
+
+--- Workspace Context Emails (Real Inbox Noise) ---
+These real emails landed in the inbox alongside the generated test data.
+They serve as edge cases for the AI to handle (classify, ignore, or flag).
+
+SECURITY ALERTS:
+  1. Google Security Alert (April 11, 2026)
+     Subject: Security alert - passwords found in data breach
+     Entities: Google, saved passwords, data breach
+     Tone: Warning, automated system alert
+
+  2. Postman sign-in alert (April 9, 2026)
+     Subject: Recent sign-in detected from Bengaluru, KA
+     Entities: Postman, Bengaluru KA, password reset
+     Tone: Informational, security notification
+
+  3. AWS Builder ID verification (April 9, 2026)
+     Subject: AWS Builder ID verification code
+     Entities: Code 355168, AWS Builder ID
+     Tone: Automated, verification OTP
+
+  4. Discord email verification (April 5, 2026)
+     Subject: Email verification for arjun_20260
+     Entities: Discord, username arjun_20260
+     Tone: Automated, account setup
+
+  5. Kaggle access alert (April 6, 2026)
+     Subject: Google Account - Kaggle access granted
+     Entities: Kaggle, Google Account data access
+     Tone: Informational, permissions notification
+
+PROFESSIONAL / LEARNING PLATFORMS:
+  6. Indeed job match (April 12, 2026)
+     Subject: RPA Engineer - QualityKiosk Technologies, Mumbai
+     Entities: QualityKiosk Technologies, Mumbai, RPA Engineer, UAT
+     Tone: Recommendation, automated job alert
+
+  7. Anthropic Education (April 5, 2026)
+     Subjects: 3 course registrations - MCP Intro, MCP Advanced, Claude Code
+     Entities: Model Context Protocol, Claude Code in Action
+     Tone: Confirmation, educational
+
+  8. Automation Anywhere / Aisera (March 29-30, 2026)
+     Subject: Aisera GenAI access request acknowledged (ID: 84905)
+     Entities: Aisera, ID 84905, Bhuvana RP, Generative AI learning
+     Tone: Acknowledgement, follow-up pending
+
+  9. UiPath Release Notes (April 8, 2026)
+     Subject: Subscription confirmed - UiPath Release Notes
+     Tone: Confirmation, automated
+
+  10. edX registration (April 3, 2026)
+      Subject: Welcome to edX - activation link
+      Tone: Welcome, automated
+
+DEVELOPER TOOLS:
+  11. ExchangeRate-API (April 9, 2026)
+      Subject: Account activated - API key provided
+      Entities: API key fc73c23f6d20be4b110b2bc7
+      Tone: Confirmation, contains sensitive API key (PII-adjacent)
+
+  12. Google Developer Program newsletter (April 3, 2026)
+      Subject: Monthly updates - AI Studio, Gemini 3.1 Flash-Lite, MCP
+      Entities: Google AI Studio, Gemini 3.1 Flash-Lite, MCP servers
+      Tone: Newsletter, informational
+
+PERSONAL:
+  13. Google One upgrade (April 4, 2026)
+      Subject: AI Pro plan upgraded - 5 TB storage included
+      Entities: Google AI Pro, 5 TB, no extra cost
+      Tone: Positive, account upgrade notification
